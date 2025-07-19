@@ -6,6 +6,18 @@
     <title>Message from MD - Shri Dinesh Group</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .slide-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .slide-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -25,7 +37,7 @@
     </header>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <section class="page-header slide-in">
         <div class="container">
             <div class="page-header-content">
                 <h1 class="page-title">Message from Managing Director</h1>
@@ -36,7 +48,7 @@
     </section>
 
     <!-- MD Message Section -->
-    <section class="md-message">
+    <section class="md-message slide-in">
         <div class="container">
             <div class="message-content">
                 <div class="md-profile">
@@ -50,39 +62,32 @@
                         <p class="md-name">Managing Director, Shri Dinesh Group</p>
                     </div>
                 </div>
-                
+
                 <div class="message-text">
-                    <p>Dear Valued Partners and Clients,</p>
-                    
-                    <p>In 1987, we began this journey with a single truck and a deep belief in hard work, integrity, and God. Today, Shri Dinesh Group stands as a diversified logistics and infrastructure powerhouse with a presence across transportation, warehousing, and heavy lifting — all built on the solid foundation of trust and discipline.</p>
-                    
-                    <p>Our early growth was fueled by two unwavering principles:</p>
-                    
-                    <ul class="commitment-list">
+                    <p class="slide-in">Dear Valued Partners and Clients,</p>
+                    <p class="slide-in">In 1987, we began this journey with a single truck and a deep belief in hard work, integrity, and God. Today, Shri Dinesh Group stands as a diversified logistics and infrastructure powerhouse with a presence across transportation, warehousing, and heavy lifting — all built on the solid foundation of trust and discipline.</p>
+                    <p class="slide-in">Our early growth was fueled by two unwavering principles:</p>
+
+                    <ul class="commitment-list slide-in">
                         <li>An uncompromising focus on customer satisfaction, and</li>
                         <li>A spotless track record of zero defaults on EMI payments.</li>
                     </ul>
-                    
-                    <p>With the support of our valued financial partners — ICICI Bank, Sundaram Finance, and Thane Janta Sahakari Bank — we expanded to a fleet of 100 trucks within the first decade. Our client portfolio grew to include esteemed names like Reliance, Castrol, Henkel, and IG Petrochemicals.</p>
-                    
-                    <p>We later diversified into warehousing, acquiring 21 acres of agricultural land and transforming it into a thriving logistics park in Bhiwandi — India's warehousing capital — now home to Grade A clients like Safexpress and BharatBenz.</p>
-                    
-                    <p>In 2008, the second generation of the Joshi family entered the business, bringing in fresh ideas, global education, and a long-term vision. We imported our first brand-new crane from Germany, establishing a bold precedent in an unorganised industry dominated by second-hand equipment. Staying true to our values, we committed to sourcing only brand-new cranes directly from OEMs. Today, our crane rental division proudly operates 110 cranes — all acquired and managed by our next generation, graduates of premier institutions like IIT Kharagpur, the University of Westminster, and King's College London.</p>
-                    
-                    <p>At the heart of our journey is a firm belief in:</p>
-                    
-                    <ul class="commitment-list">
+
+                    <p class="slide-in">With the support of our valued financial partners — ICICI Bank, Sundaram Finance, and Thane Janta Sahakari Bank — we expanded to a fleet of 100 trucks within the first decade. Our client portfolio grew to include esteemed names like Reliance, Castrol, Henkel, and IG Petrochemicals.</p>
+                    <p class="slide-in">We later diversified into warehousing, acquiring 21 acres of agricultural land and transforming it into a thriving logistics park in Bhiwandi — India's warehousing capital — now home to Grade A clients like Safexpress and BharatBenz.</p>
+                    <p class="slide-in">In 2008, the second generation of the Joshi family entered the business, bringing in fresh ideas, global education, and a long-term vision. We imported our first brand-new crane from Germany, establishing a bold precedent in an unorganised industry dominated by second-hand equipment. Staying true to our values, we committed to sourcing only brand-new cranes directly from OEMs. Today, our crane rental division proudly operates 110 cranes — all acquired and managed by our next generation, graduates of premier institutions like IIT Kharagpur, the University of Westminster, and King's College London.</p>
+                    <p class="slide-in">At the heart of our journey is a firm belief in:</p>
+
+                    <ul class="commitment-list slide-in">
                         <li>God's grace,</li>
                         <li>World-class education,</li>
                         <li>A family-first philosophy, and</li>
                         <li>The timeless wisdom passed down by my grandfather:</li>
                     </ul>
-                    
-                    <p class="quote">"Mehnat itni khamoshi se karo ki safalta shor macha de."</p>
-                    
-                    <p>Thank you for placing your trust in us. We remain committed to excellence — in every lift, every delivery, every relationship.</p>
-                    
-                    <p class="signature">
+
+                    <p class="quote slide-in">"Mehnat itni khamoshi se karo ki safalta shor macha de."</p>
+                    <p class="slide-in">Thank you for placing your trust in us. We remain committed to excellence — in every lift, every delivery, every relationship.</p>
+                    <p class="signature slide-in">
                         <strong>Mahesh Joshi</strong><br>
                         Managing Director, Shri Dinesh Group
                     </p>
@@ -92,26 +97,26 @@
     </section>
 
     <!-- Company Values -->
-    <section class="company-values">
+    <section class="company-values slide-in">
         <div class="container">
             <h2 class="section-title">Our Core Values</h2>
             <div class="values-grid">
-                <div class="value-card">
+                <div class="value-card slide-in">
                     <div class="value-icon">🙏</div>
                     <h3>God's Grace</h3>
                     <p>We believe in divine guidance and maintain our faith as the foundation of our business ethics.</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card slide-in">
                     <div class="value-icon">🎓</div>
                     <h3>World-Class Education</h3>
                     <p>Our next generation brings global education from premier institutions to drive innovation.</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card slide-in">
                     <div class="value-icon">👨‍👩‍👧‍👦</div>
                     <h3>Family-First Philosophy</h3>
                     <p>We operate as a family business, passing down values and wisdom through generations.</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card slide-in">
                     <div class="value-icon">💪</div>
                     <h3>Hard Work & Discipline</h3>
                     <p>We believe in silent hard work that creates success through dedication and perseverance.</p>
@@ -121,7 +126,7 @@
     </section>
 
     <!-- Contact CTA -->
-    <section class="contact-cta">
+    <section class="contact-cta slide-in">
         <div class="container">
             <div class="cta-content">
                 <h2>Let's Build Success Together</h2>
@@ -135,11 +140,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer slide-in">
         <div class="container">
-            <div class="footer-content">
-                <!-- Removed logo and links -->
-            </div>
+            <div class="footer-content"></div>
             <div class="footer-extra">
                 <div class="footer-contact-columns">
                     <div class="footer-contact-block">
@@ -170,6 +173,20 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        const slideElements = document.querySelectorAll('.slide-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        slideElements.forEach(el => observer.observe(el));
+    </script>
 </body>
-</html> 
+</html>
