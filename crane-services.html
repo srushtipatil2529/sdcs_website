@@ -97,7 +97,6 @@
         </div>
     </header>
 
-
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
@@ -268,13 +267,13 @@
                         <p>operation.cranes@shridinesh.com</p>
                     </div>
                     <div class="footer-contact-block">
-                        <form class="footer-quote-form">
+                        <div class="footer-quote-form">
                             <h3>QUOTE ENQUIRY</h3>
-                            <input type="email" placeholder="Email Address" required>
-                            <input type="text" placeholder="Crane Requirement" required>
-                            <input type="text" placeholder="Location" required>
-                            <button type="submit" class="footer-quote-btn">REQUEST FOR QUOTE</button>
-                        </form>
+                            <input type="email" id="quote-email" placeholder="Email Address" required>
+                            <input type="text" id="quote-requirement" placeholder="Crane Requirement" required>
+                            <input type="text" id="quote-location" placeholder="Location" required>
+                            <button type="button" id="quote-submit" class="footer-quote-btn">REQUEST FOR QUOTE</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -284,6 +283,21 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Basic script to handle quote form submission
+        document.getElementById('quote-submit').addEventListener('click', function() {
+            const email = document.getElementById('quote-email').value;
+            const requirement = document.getElementById('quote-requirement').value;
+            const location = document.getElementById('quote-location').value;
+
+            if (email && requirement && location) {
+                console.log('Quote Request:', { email, requirement, location });
+                alert('Quote request submitted! Check console for details.');
+                // Add actual submission logic here (e.g., API call) when backend is available
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
 </body>
 </html>
